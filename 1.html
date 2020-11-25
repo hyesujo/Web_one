@@ -3,14 +3,49 @@
 <head>
     <title>WEB1 - html</title>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+
 </head>
-    <h1><a href ="index.html">WEB</a></h1>
 <body>
+
+    <h1><a href ="index.html">WEB</a></h1>
+    <!-- <input type="button" value="night" onclick="
+    document.querySelector('body').style.backgroundColor='black';
+    document.querySelector('body').style.color='white';">
+
+    <input type="button" value="day" onclick="
+    document.querySelector('body').style.backgroundColor='white';
+    document.querySelector('body').style.color='black';
+    "> -->
+    <input id="night_day" type="button" value="night" onclick="
+    var target = document.querySelector('body');
+    if(this.value === 'night') {
+        target.style.backgroundColor='black';
+        target.style.color='white';
+    this.value = 'day';
+    var links = document.querySelectorAll('a');
+    for(i=0; i<links.length; i=i+1) {
+        links[i].style.color='powderblue';
+    }
+    } else {
+        target.style.backgroundColor='white';
+        target.style.color='black';
+    this.value = 'night';
+    var links = document.querySelectorAll('a');
+    var i=0;
+   for(i =0; i<links.length; i++) {
+       links[i].style.color='blue';
+   }
+    }">
+   
+    <div id="grid">
 <ol>
     <li><a href="1.html">HTML</a> </li>
     <li><a href="2.html">css</a></li>
     <li><a href="3.html">JavaScript</a>  </li><br>
 </ol>
+<div id="article">
 <h2>HTML이란</h2>
 
 <p><a href="https://www.w3.org/"
@@ -50,5 +85,7 @@ pages</strong> and web applications.
     <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
     
       </p>
+    </div>
+    </div>
      </body>
      </html>>
